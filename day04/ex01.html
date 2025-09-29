@@ -61,6 +61,17 @@
 
             outputResult.innerText = 'select' + selectItem.value
         })
+
+        var btnSelect2 = document.getElementById("btn-select2")
+        var outputResult2 = document.getElementById("output-result2")
+
+        btnSelect2.addEventListener('click', ()=> {
+            var selectItem2 = document.querySelector("input[name=group-2]:checked")
+            
+            console.log(selectIte2)
+
+            outputResult.innerText = 'select' + selectItem2.value
+        })
     </script>
      
 </body>
