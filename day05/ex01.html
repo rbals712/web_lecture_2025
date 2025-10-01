@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> check box </h1>
+    <p>약관에 동의 합니까?</p>
+    <input type="checkbox" id="chk-agree"/>
+    <button id="btn-submit">제출</button>
+    <p id="txt-result">
+    </p>
+    <script>
+        var chkAgree = document.getElementById("chk-agree")
+        //시험에 빈칸으로 나올 수 있음(document.getElementById or 그 빈칸에 뭐 들어갈지)
+        var btnSubmit = document.getElementById("btn-submit")
+        var txtResult = document.getElementById("txt-result")
+        btnSubmit.addEventListener('click',()=> {
+            console.log(chkAgree.checked)
+            if(chkAgree.checked == true) (
+                txtResult.innerText = "동의함"
+            )
+            else (
+                txtResult.innerText = "동의하지 않음"
+            )
+        })
+    </script>
+</body>
+</html>
